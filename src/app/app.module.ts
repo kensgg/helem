@@ -5,6 +5,8 @@ import {router} from './routers'
 
 import{ environment } from '../environments/environment';
 import { AngularFireModule} from 'angularfire2';
+import { LoginComponent } from './login/login.component';
+import { WelcomeComponent } from './Welcome/welcome.component';
 
 import  {AngularFirestoreModule} from 'angularfire2/firestore';
 import {AngularFireAuthModule} from 'angularfire2/auth'; 
@@ -16,6 +18,8 @@ import {TransferHttpCacheModule} from '@nguniversal/common';
   declarations: [
     AppComponent,
     HomeComponent,
+    LoginComponent,
+    WelcomeComponent,
   ],
   imports: [
     BrowserModule.withServerTransition({appId: 'my-app'}),

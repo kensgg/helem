@@ -3,8 +3,7 @@ import {Component} from '@angular/core';
 @Component({
   selector: 'app-home',
   template: `
-    <h3>{{ message }}</h3>
-    <img [src]="image">
+    <h3>{{ message }}</h3><login></login>
   `
 })
 export class HomeComponent {
