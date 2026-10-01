@@ -12,7 +12,7 @@ import { authServices } from '../service/auth.services';
 export class LoginComponent implements OnInit{
     constructor(private auth: authServices){}
     ngOnInit(): void {
-        
+        this.auth.getUser().subscribe(console.log);
     }
     login(){
         this.auth.login().then(console.log);
