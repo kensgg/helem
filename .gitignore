@@ -56,3 +56,6 @@ webpack.records.json
 # System files
 .DS_Store
 Thumbs.db
+
+
+src/environments/environment.ts

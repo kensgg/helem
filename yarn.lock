@@ -2711,6 +2711,11 @@
   "resolved" "https://registry.npmjs.org/follow-redirects/-/follow-redirects-1.16.0.tgz"
   "version" "1.16.0"
 
+"font-awesome@^4.7.0":
+  "integrity" "sha512-U6kGnykA/6bFmg1M/oT9EkFeIYv7JlX3bozwQJWiiLz6L0w3F5vBVPxHlwyX/vtNq1ckcpRKOB9f2Qal/VtFpg=="
+  "resolved" "https://registry.npmjs.org/font-awesome/-/font-awesome-4.7.0.tgz"
+  "version" "4.7.0"
+
 "for-each@^0.3.5":
   "integrity" "sha512-dKx12eRCVIzqCxFGplyFKJMPvLEWgmNtUrpTiJIR5u97zEhRG8ySrtboPHZXx7daLxQVrl643cTzbab2tkQjxg=="
   "resolved" "https://registry.npmjs.org/for-each/-/for-each-0.3.5.tgz"
