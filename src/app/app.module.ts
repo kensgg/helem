@@ -8,7 +8,6 @@ import { AngularFireModule } from 'angularfire2';
 import { LoginComponent } from './login/login.component';
 import { WelcomeComponent } from './Welcome/welcome.component';
 import { ListCreatorComponent } from './creator/list.creator.component';
-import { SubjectCreatorComponent } from './creator/subject.creator.component';
 
 import { AuthGuard } from './guards/auth.guard.services';
 
@@ -22,6 +21,7 @@ import { TransferHttpCacheModule } from '@nguniversal/common';
 import { authServices } from './service/auth.services';
 
 import { FormsModule } from '@angular/forms';
+import { ListService } from './service/list.service';
 
 @NgModule({
   declarations: [
@@ -29,8 +29,7 @@ import { FormsModule } from '@angular/forms';
     HomeComponent,
     LoginComponent,
     WelcomeComponent,
-    ListCreatorComponent,
-    SubjectCreatorComponent
+    ListCreatorComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'my-app' }),
@@ -41,7 +40,7 @@ import { FormsModule } from '@angular/forms';
     TransferHttpCacheModule,
     FormsModule
   ],
-  providers: [authServices, AuthGuard, UserServices],
+  providers: [authServices, AuthGuard, UserServices, ListService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
